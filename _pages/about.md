@@ -5,8 +5,17 @@ excerpt: "Who I am and what I do"
 sitemap: false
 permalink: /about.html
 image:
-  feature: abstract-11.jpg
+  feature: aboutMeHeader.jpg
+  credit: Mike Maxwell
+  creditlink: http://misterwell.smugmug.com
 ---
+
+<figure>
+    <img class="img-circle three-across" src="{{ site.url }}/images/avatar2.jpg" alt="">
+    <img class="img-circle three-across" src="{{ site.url }}/images/avatar1.png" alt="">
+    <img class="img-circle three-across" src="{{ site.url }}/images/avatar3.jpg" alt="">
+</figure>
+{: .image-center}
 
 Since graduating from college, I’ve been working at Vertical Communications for nearly a decade on many exciting projects that have advanced my technical and managerial skills markedly. I started as a QA engineer and quickly transitioned into a junior developer role, creating & updating VBScript IVR callflows for our largest customer, CVS Pharmacy. I added features & functionality to the existing scripts, refactored the code to facilitate adding Spanish language support, and even started fixing bugs in the C++ backend server application.
 

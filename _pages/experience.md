@@ -6,6 +6,7 @@ sitemap: false
 permalink: /experience.html
 image:
   feature: abstract-11.jpg
+reading_time:     false
 ---
 
 *   ### My passion is designing & building products that make the customer’s life better, easier, and more enjoyable by addressing common problems with technological solutions.

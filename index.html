@@ -3,7 +3,9 @@ layout: post-index
 title: Latest Posts
 comments: false
 image:
-  feature: abstract-2.jpg
+  feature: headerImage.jpg
+  credit: Mike Maxwell
+  creditlink: http://misterwell.smugmug.com
 ---
 
 {% for post in paginator.posts %}
@@ -30,7 +32,7 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {{ post.content }}
+    {{ post.excerpt }}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}

@@ -2,8 +2,6 @@
 title: Implementing UIAppearanceProxy Selectors
 layout: post
 tags: [iOS]
-image:
-  feature: abstract-10.jpg
 ---
 
 I’ve been using the splendid [M13Checkbox](https://github.com/Marxon13/M13Checkbox) open-source library in one of my projects, and while updating the UI to support iOS 7’s flat motif I found that the library had implemented UIAppearance selectors, and there was much rejoicing:

@@ -4,7 +4,7 @@ title: Creating Google's Material Design Spinner on iOS
 description: "Implementing the Google Material Design Spinner for iOS"
 tags: [iOS]
 image:
-  feature: abstract-10.jpg
+  feature: material-spinner-header.gif
 ---
 
 TLDR; if you want Google’s Indeterminate Material Design spinner on iOS, check out my [MMMaterialDesignSpinner](https://github.com/misterwell/MMMaterialDesignSpinner) open-source library.
