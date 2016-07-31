@@ -5,7 +5,7 @@ excerpt: "Things I've Done"
 sitemap: false
 permalink: /experience.html
 image:
-  feature: abstract-11.jpg
+  feature: experience-header.jpg
 reading_time:     false
 ---
 

@@ -5,7 +5,7 @@ excerpt: "Projects I've Worked On"
 sitemap: false
 permalink: /work.html
 image:
-  feature: abstract-11.jpg
+  feature: experience-header.jpg
 ---
 <div style="text-align: center;" markdown="1">
 

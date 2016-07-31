@@ -1,6 +1,9 @@
 # Menu navigation links
 
 - title: Experience
+  url: /experience.html
+
+- title: Apps
   url: /work.html
 
 - title: Photography
