@@ -48,6 +48,14 @@
 	}
 }
 
+/* float image to the right */
+.image-center {
+  float: none;
+  @media #{$medium} {
+    text-align: center;
+  }
+}
+
 /* remove styling from a list element */
 .unstyled-list {
 	list-style: none;

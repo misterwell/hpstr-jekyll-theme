@@ -4,7 +4,7 @@ title: Using Vector Graphics on iOS
 description: "How to make generated Paintcode vector graphics more robust on iOS"
 tags: [iOS]
 image:
-  feature: abstract-10.jpg
+  feature: post-vectors-on-ios/vectorHeader.png
 ---
 
 In the past few projects I’ve been a part of, I’ve been using tools like [Qwarkee](https://itunes.apple.com/us/app/qwarkee/id498340809?mt=12) and [PaintCode](https://itunes.apple.com/us/app/paintcode/id507897570?mt=12) to create Obj-c Quartz drawing code, and have been impressed with the results. I’ve found that it wasn’t inherently obvious how the generated code can be integrated in a simple & modular way. I recently created the [MMScalableVectorView repository](https://github.com/misterwell/MMScalableVectorView) on GitHub that attempts to address this observed deficiency. Issues/Pulls encouraged. For the interested, read on for my thoughts & conclusions that led me to this.
@@ -17,11 +17,19 @@ Not everyone is familiar with vector images and how they’re different from tra
 
 Why should the end-user care whether they’re being shown bitmap images or vector images? Simply put, they shouldn’t. But more precisely, what matters is whether the UI being presented looks good & functions well in whatever environment it is accessed from. For mobile applications and responsive web sites, that means adapting to the user’s screen size without sacrificing graphical fidelity. And that’s where these two paths diverge pretty significantly. As we’ve learned, bitmaps are essentially just a picture of an image, while vectors are a set of instructions on exactly how to recreate that image. So what happens when we ask these images to fit a space thats larger or smaller than what it was originally intended to fill? For bitmaps, the results should be familiar to just about anyone:
 
-[bitmapExample](http://michaelmaxwell.info/wordpress/wp-content/uploads/2013/12/bitmapExample.png)Bitmap image blown up by a factor of 2
+<figure>
+    <img src="{{ site.url }}/images/post-vectors-on-ios/bitmapExample.png" alt="">
+    <figcaption>Bitmap image blown up by a factor of 2</figcaption>
+</figure>
+{: .image-center}
 
 The original size looks great, but blowing the image up by only 2x makes it look blurry. Why is this? Simply put, there’s not enough information in the original bitmap representation of the image to recreate it at a larger size. It would be like someone handing you a 4×6 photo and asking you to create an 8×10 without the negative. So how do vector images look when they’re blown up? It can’t be that much better, can it?
 
-[vectorExample](http://michaelmaxwell.info/wordpress/wp-content/uploads/2013/12/vectorExample.png)Vector image blown up by a factor of 2
+<figure>
+    <img src="{{ site.url }}/images/post-vectors-on-ios/vectorExample.png" alt="">
+    <figcaption>Vector image blown up by a factor of 2</figcaption>
+</figure>
+{: .image-center}
 
 The results are dramatically different! This is because the set of instructions that describe how to create the image is more powerful than just having the image itself. By doubling or tripling the distances and control points that a vector graphic describes, a computer can perfectly recreate that image at a larger size than the graphic was originally intended to fill. Beyond this, vectors have other advantages and disadvantages worth considering:
 
@@ -137,7 +145,11 @@ NSString* textContent = @"Test Text!";
 
 With this code in hand (or, more specifically, your clipboard), all you have to do is create a new UIView subclass, and paste it into its drawRect method. That’s it! So let’s give it a try with various view sizes and watch the power of vectors take over!
 
-[Whiskey Tango Foxtrot??!?](http://michaelmaxwell.info/wordpress/wp-content/uploads/2013/12/normalVector.png)Whiskey Tango Foxtrot??!?
+<figure>
+    <img src="{{ site.url }}/images/post-vectors-on-ios/normalVector.png" alt="">
+    <figcaption>Whiskey Tango Foxtrot??!?</figcaption>
+</figure>
+{: .image-center}
 
 Surely we’ve done something wrong — we’ve used vector images, yet they’re not scaling, and this seems to defeat the whole purpose of using vector graphics! Let’s review the first few lines of the drawing code to see if we can pinpoint the problem:
 
@@ -171,7 +183,11 @@ Note: I’m not 100% convinced that this means the transform property is always 
 
 I decided to solve these problems so that I could more easily use vector graphics in my iOS applications, and the result is [MMScalableVectorView](https://github.com/misterwell/MMScalableVectorView). It’s an extremely simple solution and it’s not a magic bullet, but at a minimum it provides the ability to use vector images as UIView objects that honor the view’s contentMode property when the vector is drawn. Observe the results:
 
-[That's more like it.](http://michaelmaxwell.info/wordpress/wp-content/uploads/2013/12/scaledVector.png)That’s more like it.
+<figure>
+    <img src="{{ site.url }}/images/post-vectors-on-ios/scaledVector.png" alt="">
+    <figcaption>That's more like it.</figcaption>
+</figure>
+{: .image-center}
 
 ### Instructions
 
