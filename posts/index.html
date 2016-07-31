@@ -3,6 +3,8 @@ layout: post-index
 title: All Posts
 description: "An archive of posts."
 comments: false
+image:
+  feature: abstract-6.jpg
 ---
 
 {% for post in site.posts %}
@@ -15,7 +17,9 @@ comments: false
       <ul>
     {% endif %}
 
-        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <br>
+        {{ post.description }}</li><br>
 
     {% if forloop.last %}
       </ul>
