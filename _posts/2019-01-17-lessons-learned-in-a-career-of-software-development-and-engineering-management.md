@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Lessons Learned in a Career of Software Development and Engineering Management
+title: Lessons Learned in a Career of Software Engineering
 description: "Join me as I try to unpack what 10+ years of software engineering has taught me."
+tags: [management, engineering]
 ---
 
-Despite my best efforts to ignore it, I've been doing software development for a long, long time. And in that time, I like to think I've continued to hone my skills and be a better software engineer as well as a better person, but remain mindful that I can always improve and become better if I keep an open & curious mind.
+Despite my best efforts to ignore it, I've been doing software development for a long, long time. And in that time, I've worked to continually hone my skills and be a better software engineer and manager, but know there are always ways to become better if I keep an open & curious mind. With that in mind, I wanted to get the most important lessons down on paper for other people so they might benefit from what I've learned.
 
 I'll be the first to admit that software development isn't for everyone -- specifically, I'm of the mindset that in order to excel at writing code, you specifically need to be an *engineer*. This statement might intimidiate some people who feel like they don't have a formal education in engineering, but it shouldn't -- after all, take a look at the definition of an *engineer* according to whatever source Apple uses for it's dictionary application:
 
