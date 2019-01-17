@@ -13,13 +13,13 @@ I'll be the first to admit that software development isn't for everyone -- speci
 
 In my experience, this simply boils down to one thing: _**problem solving**_. Even the simplest coding tasks will require some form of problem solving where the costs & benefits of the choices in front of a developer must be weighed, and a decision must be made that will have a lasting effect on the code base. In my experience, this is primarily where bad developers faulter -- they just write code without considering the short- and long-term impacts of every line they're writing.
 
-### Always take the time to refactor common logic rather than doing a copy/paste
+## Always take the time to refactor common logic rather than doing a copy/paste
 
 It's tough to communicate the enormous value of doing this without experiencing the heartache of NOT doing it first hand, but I can't stress this point enough. When a snippet of code is copied and pasted elsewhere, it's often disasterous down the road for the key reason that the copied bit of code will some day be modified, and whether the other areas will get updated as well is anyone's guess. Behavior will be different depending on which version of the copied code is being executed. Extending the code in the future will be a pain and the pasted bits of code might not be remembered when the original is getting updated.
 
 The most common challenge I've run into is I'm under a time crunch and I'm faced with a code block that could be used in two places but their needs differ in some key ways. But the best thing to do is to take the common code bit and take the time to turn it into a function with parameters that can be used to achieve the behavior needed by both places. This can take a bit of additional time, but the more you do it the better you'll get at it, and the time savings you and your team will experience later on can't be understated.
 
-### Don't be afraid to Google problems (both simple & tough)
+## Don't be afraid to Google problems (both simple & tough)
 
 Engineers are, stereotypically, a prideful bunch. As a species, we typically don't like to ask for help, and there's a notion that if you use Google to find an answer you're not a good programmer. That's bollix, I say.
 
@@ -29,7 +29,7 @@ Secondly, the Internet has a wealth of information, but conversely it also has a
 
 What is key is to integrate the content you find on the internet into your experience base, rather than just taking it and pasting into what you're working on. By doing the former, you have it in your experience toolbelt to come back to and use later (even if you have to look it up again), but doing the latter leaves you just about as experienced as you were before you found the answer.
 
-### Avoid reinventing the wheel
+## Avoid reinventing the wheel
 
 There are many engineers out there who believe that each dependency you bring into your code base represents technical debt that exposes you to unnecessary risk, and that as a general rule engineers should strive to try to build as much as possible first-hand as it ensures the team will have complete control and responsiblity over what's contained in the code base. I can't say that I disagree with this, but I think it's a shortsighted approach that ultimately is bad for the _business_ of development. I'll elaborate with an example:
 
@@ -57,19 +57,19 @@ With all that being said, it's critical that when you include a dependency in yo
 3. Is accepting to outside issues & contributions
 4. Doesn't have an alarming number of real issues logged
 
-### Plan, but don't overplan
+## Plan, but don't overplan
 
 This one might not apply to all engineers as everyone has a different way of thinking, but personally I can't effectively plan how to build something without building a little bit of it and then taking a step back to analyze and plan where to go from there. It's kind of a 1 step forward, 2 steps back, 5 steps forward kind of thing.
 
 Be agile in your architecture planning -- try to deliver small bits of fully functional code and then build on top of that, and if you realize one of your completed bits needs to be changed to work better, take the time to do it. Don't be afraid to make mistakes, but don't ignore or workaorund your mistakes -- fix them.
 
-### Share your work in progress early and be vigialant about asking for feedback
+## Share your work in progress early and be vigialant about asking for feedback
 
 Again, engineers are often prideful and, in my experience, don't want to show off their work until it's done & amazing. But what if you build the wrong thing? One of my sayings is that "in software development, there's usually hundreds of ways to build something, and less than 5 of them are ever actually right." There are so many ways to build something wrong, and showing work in progress code to your peers gives you another set of eyes to provide a sanity check that you're heading in the right direction, rather than waiting until the end for someone to tell you that you spent days getting to the wrong place.
 
 This is especially true for tech leads or engineering managers -- sure, you want to trust that your reports are doing everything perfectly from the get-go... but if that were the case there wouldn't be tech leads or engineering managers. The sooner an issue is identified the cheaper it will be to fix, so get invovled early and do a peer programming review to make sure your people are on the right track.
 
-### If you can't diagram it, you can't build it
+## If you can't diagram it, you can't build it
 
 I suck at drawing. Truly. But one of the things I love doing is creating engineering diagrams -- system architectures, sequence diagrams, UML diagrams, and so many more. Drawing out what you intend to build is the most effective way to do these key things:
 
@@ -79,7 +79,7 @@ I suck at drawing. Truly. But one of the things I love doing is creating enginee
 
 And it doesn't have to be fancy -- I use OmniGraffle to create some really amazing diagrams but whiteboarding is a great way to rapidly diagram something and sending a picture of it out to the team is just about as effective (assuming your handwriting isn't complete chicken scratch!).
 
-### If you can't explain how you're going to refactor something, you're not ready to refactor
+## If you can't explain how you're going to refactor something, you're not ready to refactor
 
 Over the years, I've had engineers reporting to me that come to me and can very clearly articulate why a library or module is constraining or blocking them, and that will lead them to the next logic step of recommending a refactor to fix the deep-seeded issues. Sometimes, your team will have the bandwidth to do a large & beneficial refactor, so you may be inclined to set your engineers loose and trust that they'll refactor it to be much better. But this is often not happens -- ultimately the goal of a refactor is to make a component better than it was before, but sometimes engineers get ancy and just rebuild the component without truly solving all the problems at hand.
 
