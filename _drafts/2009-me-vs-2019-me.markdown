@@ -1,0 +1,53 @@
+---
+title: 2009 me vs. 2019 me
+---
+
+Social media is going crazy with the 2009 vs. 2019 profile picture comparison, and as I look back on the past 10 years I realize that my professional career is one of the things that has changed most in my life and would be cool to look back and do a comparison on. So here is 2009 Mike Maxwell compared to 2019 Mike Maxwell in the ways I can think of:
+
+#### LinkedIn Profile Picture
+
+**2009**:
+
+**2019**:
+
+#### My Job
+
+**2009**: Scrum Master & Senior Engineer at Vertical Communications
+
+**2019**: VP of Technology at Hathway
+
+#### What I Actually Do
+
+**2009**: Run the mobile apps scrum team responsible for the ViewPoint Mobile Apps for iOS & Android; Probably in the middle of the major SIP Phone initiative which moved forward after I successfully mashed the PJSIP and OpenVPN libraries together to create an app-level VPN tunnel for SIP traffic within the app (since OS-level per-app VPN didn't yet exist).
+
+**2019**: Work to make the Hathway TECH department (ENG & QA teams) run like a well-oiled, fun-loving machine; Guide Hathway's overall technology direction and its Intellectual Property; participate in key sales pitches; mentor new tech leads; collaborate with my Web Tech Director in Dallas often.
+
+#### Where I Live
+
+**2009**: Avalon Apartments in San Jose, CA
+
+**2019**: Central Coast, CA
+
+#### Number of People Managing (Directly or Indirectly)
+
+**2009**: 5
+
+**2019**: 25+
+
+#### Number of Active Projects/Apps
+
+**2009**: 2-3 (#brandlife)
+
+**2019**: 15+ (#agencylife)
+
+#### Side Projects
+
+**2009**: Some small app projects, including TheTVDB and Check Ninja.
+
+**2019**: Doing some technology strategy consulting, teaching a class for a software testing apprenticeship program in SLO, building a digital scoreboard and companion app, and scrubbing website data from CellarTracker.com to create a better wine cellar management UX.
+
+#### Typical Daily Challenges
+
+**2009**: Coordinating team's efforts with other engineering teams; peer programming with direct reports to solve tough engineering problems; managing sustaining needs vs. feature development efforts;
+
+**2019**: Ensure projects are on track and are high quality; managing escalations & fire drills and my team's response to them; balancing staff's resourcing between active projects; constant decision making; debating, negotiating, and discussing company topics with the executive team; mentoring other engineering managers and tech leads; constant recruiting both onshore and offshore.
